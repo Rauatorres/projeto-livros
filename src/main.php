@@ -12,7 +12,6 @@
         <a href="index.php" id="header"><h1>Projeto Livros</h1></a>
     </header>
     <section>
-        fsdafasdf
     </section>
 </body>
 </html>

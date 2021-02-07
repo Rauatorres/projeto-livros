@@ -2,7 +2,7 @@
 html, body{
     margin: 0;
     padding: 0;
-    width: 100%;
+    max-width: 100%;
     height: 100%;
 
 }
@@ -16,30 +16,33 @@ header{
     position: relative;
 
     width: 100%;
-    height: 8.1%;
+    height: 12.2%;
     
-    padding: 1%;
-
+    margin: 0;
 }
 a{
     text-decoration: none;
+
 }
-#header{
+ #header{
+
     display: block;
+    position: relative;
 
-    height: 155%;
-    width: 17%;
+    height: 100%;
+    width: 235px;
 
-    margin-top: -2.6%;
-    margin-left: 5%;
-}
+    /* margin-top: -2.6%; */
+    left: 7%;
+    padding: 0.0012%;
+} 
 h1{
-    /* background-color: blue; */
     color: white;
 
-    /* margin-top: 5%; */
     margin-left: 5%;
-    padding-top: 7%;
+    /* padding-top: 7%; */
+    margin-top: 8.5%;
+    margin-bottom: 8.5%;
 }
 
 /* Área principal da página */
@@ -51,7 +54,7 @@ section{
 
     margin: auto;
 
-    height: 87.5%;
+    height: 87.8vh;
     width: 50%;
 
 }
