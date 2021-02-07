@@ -1,0 +1,160 @@
+/* Configurações gerais da página */
+body{
+    background-color: rgb(45, 195, 255);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* Cabeçalho */
+header{
+    background-color: rgba(82, 230, 253, 0.918);
+
+    position: absolute;
+
+    width: 100%;
+    height: 49px;
+    
+    margin: 0;
+    padding: 1%;
+
+    top: 0;
+}
+a{
+    text-decoration: none;
+}
+#header{
+    /* background-color: red; */
+
+    display: block;
+
+    height: 155%;
+    width: 17%;
+
+    margin-top: -2.6%;
+    margin-left: 5%;
+}
+h1{
+    /* background-color: blue; */
+    color: white;
+
+    /* margin-top: 5%; */
+    margin-left: 5%;
+    padding-top: 7%;
+}
+
+/* Área do formulário */
+div{
+    width: 25%;
+    height: 53vh;
+
+    background-color: rgba(255, 255, 255, 0.918);
+    /* background-color: red; */
+
+    margin: auto;
+    margin-top: 10%;
+
+    border-radius: 5%;
+}
+h2{
+    /* background-color: red; */
+    color: rgb(44, 170, 219);
+
+    display: block;
+    position: relative;
+
+    left: 7%;
+    top: 5%;
+    width: fit-content;
+
+    font-size: 22pt;
+}
+hr{
+    margin-top: 7%;
+}
+form{
+    width: 60%;
+    /* position: relative; */
+    /* background-color: red; */
+    margin: auto;
+    margin-top: 5%;
+    /* left: 10%;
+    top: 5%; */
+}
+
+/* Conteúdo */
+label, input{
+    display: block;
+}
+
+label{
+    margin-bottom: 2%;
+
+    font-size: 13pt;
+    /* background-color: red; */
+}
+input{
+    margin-bottom: 10%;
+
+    width: 100%;
+    height: 17pt;
+}
+input[type='submit']{
+    background-color: rgba(255, 255, 255, 0.918);
+    color: rgb(50, 162, 206);
+
+    width: 70%;
+    height: 10%;
+
+    margin-top: 15%;
+    margin-left: 17%;
+    margin-bottom: 10%;
+    padding: 3%;
+    padding-bottom: 3%;
+
+    font-size: 13pt;
+
+    border: 2px solid rgb(54, 186, 238);
+    border-radius: 15px;   
+}
+
+#register{
+    color: rgb(22, 154, 206);
+
+    margin-left: 32%;
+
+    font-size: 13pt;
+
+}
+
+input[type='submit']:hover{
+    color: rgb(27, 102, 155);
+    border-color: rgb(50, 141, 206);
+
+    cursor: pointer;
+}
+#register:hover{
+    color: rgb(27, 102, 155);
+}
+
+/* página de cadastro */
+
+#register-box{
+    
+    width: 30%;
+    height: 72vh;
+}
+#register-form{
+    width: 65%;
+}
+#register-button{
+    margin-left: 15%;
+}
+#login{
+    color: rgb(22, 154, 206);
+
+    margin-left: 12%;
+
+    font-size: 13pt;
+}
+

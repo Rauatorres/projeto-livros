@@ -1,0 +1,57 @@
+/* Configurações gerais da página */
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+}
+body{
+    background-color: rgb(45, 195, 255);
+}
+/* Cabeçalho */
+header{
+    background-color: rgba(82, 230, 253, 0.918);
+
+    /* position: absolute; */
+
+    width: 100%;
+    height: 49px;
+    
+    padding: 1%;
+
+}
+a{
+    text-decoration: none;
+}
+#header{
+    display: block;
+
+    height: 155%;
+    width: 17%;
+
+    margin-top: -2.6%;
+    margin-left: 5%;
+}
+h1{
+    /* background-color: blue; */
+    color: white;
+
+    /* margin-top: 5%; */
+    margin-left: 5%;
+    padding-top: 7%;
+}
+
+/* Área principal da página */
+section{
+    /* background-color: rgba(255, 255, 255, 0.918); */
+    background-color: rgba(255, 255, 255, 0.918);
+    
+    position: relative;
+
+    margin: auto;
+
+    height: 100%;
+    width: 50%;
+
+}
