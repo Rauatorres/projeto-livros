@@ -13,10 +13,10 @@ body{
 header{
     background-color: rgba(82, 230, 253, 0.918);
 
-    /* position: absolute; */
+    position: relative;
 
     width: 100%;
-    height: 49px;
+    height: 8.1%;
     
     padding: 1%;
 
@@ -51,7 +51,7 @@ section{
 
     margin: auto;
 
-    height: 100%;
+    height: 87.5%;
     width: 50%;
 
 }
