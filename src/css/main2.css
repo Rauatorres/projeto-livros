@@ -1,0 +1,73 @@
+/* configurações gerais da página */
+html, body{
+    height: 100%;
+    width: 100%;
+    
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Cabeçalho */
+header{
+    background-color: black;
+
+    height: 58px;
+}
+a{
+    text-decoration: none;
+
+    
+}
+.header-tabs{
+    color: white;
+    /* background-color: sienna; */
+
+    position: relative;
+    float: left;
+
+    font-size: 13pt;
+
+    /* margin: 10px; */
+    margin-left: 70px;
+    padding: 2px 7px;
+}
+#home-title{
+    /* background-color: sienna; */
+
+    display: block;
+    width: fit-content;
+    height: fit-content;
+
+    top: 7px;
+    left: 65px;
+    margin: 0px;
+    padding: 10px;
+
+    font-size: 16pt;
+}
+/* #header-config-tabs{
+    background-color: springgreen;
+
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+
+    left: 360px;
+} */
+#header-config-tabs{
+    /* background-color: springgreen; */
+
+    position: relative;
+    float: left;
+
+    left: 350px;
+
+    width: fit-content;
+    height: fit-content;
+
+    margin-top: 17px;
+}
+#header-config-tabs .header-tabs:hover{
+    color: rgb(187, 187, 187);
+} 
