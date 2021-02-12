@@ -1,0 +1,148 @@
+/* configurações gerais da página */
+html, body{
+    height: 100%;
+    width: 100%;
+    
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Cabeçalho */
+header{
+    background-color: black;
+
+    height: 58px;
+    width: 100%;
+
+    position: fixed;
+    z-index: 1;
+}
+a{
+    text-decoration: none;
+}
+.header-tabs{
+    color: white;
+
+    position: relative;
+    float: left;
+
+    font-size: 13pt;
+
+    margin-left: 70px;
+    padding: 2px 7px;
+}
+#home-title{
+    display: block;
+    width: fit-content;
+    height: fit-content;
+
+    top: 7px;
+    left: 65px;
+    margin: 0px;
+    padding: 10px;
+
+    font-size: 16pt;
+}
+#header-config-tabs{
+
+    position: relative;
+    float: left;
+
+    left: 350px;
+
+    width: fit-content;
+    height: fit-content;
+
+    margin-top: 17px;
+}
+#header-config-tabs .header-tabs:hover{
+    color: rgb(187, 187, 187);
+} 
+
+
+/* Barra de Navegação lateral*/
+nav{
+    background-color: rgb(185, 185, 185);
+    
+    position: fixed;
+
+    width: 170px;
+    height: 100%;
+
+    margin: 0;
+}
+ul{
+    list-style: none;
+
+    position: relative;
+
+    top: 40px;
+
+    padding: 0;
+}
+
+.selection-items{
+    color: black;
+
+    display: block;
+
+    cursor: default;
+
+    width: 120px;
+    
+    padding: 20px;
+    padding-left: 30px;
+
+    font-size: 15pt;
+}
+.items-box{
+    background-color: rgb(212, 212, 212);
+
+    position: absolute;
+
+    display: none;
+
+    left: 170px;
+
+}
+#categorias-container .items-box{
+    top: 0;
+}
+#livros-container .items-box{
+    top: 63px;
+}
+#autores-container .items-box{
+    top: 126px;
+}
+.items{
+    display: block;
+
+    width: 160px;
+    padding: 15px;
+
+    font-size: 13pt;
+}
+
+#categorias-container .items{
+    color: rgb(35, 84, 243);
+}
+#livros-container .items{
+    color: rgb(28, 121, 0);
+}
+#autores-container .items{
+    color: rgb(204, 90, 23);
+}
+
+#categorias-container .items:hover{
+    background-color: rgb(150, 150, 150);
+    color: white;
+}
+#livros-container .items:hover{
+    background-color: rgb(150, 150, 150);
+    color: white;
+}
+#autores-container .items:hover{
+    background-color: rgb(150, 150, 150);
+    color: white;
+}

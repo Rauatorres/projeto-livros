@@ -1,0 +1,55 @@
+#add-buttons-box{
+    /* background-color: rgb(0, 217, 255); */
+    position: absolute;
+
+    width: 700px;
+    height: 500px;
+
+    top: 70px;
+    left: 350px;
+}
+.add-buttons{
+    /* background-color: darkgoldenrod; */
+
+    display: block;
+
+    width: 350px;
+
+    margin: 70px;
+    margin-left: 170px;
+    padding: 25px;
+    padding-left: 35px;
+
+    font-size: 16pt;
+
+    border-radius: 30px;
+}
+span{
+    margin-left: 30px;
+}
+
+#add-livro{
+    border: 2px solid rgb(51, 165, 16);
+    color: rgb(28, 121, 0);
+}    
+#add-categoria{
+    border: 2px solid rgb(91, 128, 248);
+    color: rgb(35, 84, 243);
+
+}
+#add-autor{
+    border: 2px solid rgb(233, 123, 60);
+    color: rgb(204, 90, 23);
+}
+#add-livro:hover{
+    background-color: rgb(51, 165, 16);
+    color: white;
+}    
+#add-categoria:hover{
+    background-color: rgb(91, 128, 248);
+    color: white;
+}
+#add-autor:hover{
+    background-color: rgb(233, 123, 60);
+    color: white;
+}
