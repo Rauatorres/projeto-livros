@@ -34,7 +34,7 @@ try{
 
 }catch (PDOexception $e){
     $errorMessage = $e->getMessage();
-    if ($errorMessage == "SQLSTATE[HY000] [1049] Unknown database '".$username."host=localhost'"){
+    if ($errorMessage == "SQLSTATE[HY000] [1049] Unknown database '".$username."host=localhost'" || $errorMessage == "SQLSTATE[HY000] [1049] Unknown database '".$username."'"){
         echo "Não foi possível fazer login - Usuário não identificado";
     }elseif ($errorMessage == 'Senha incorreta'){
         echo "Não foi possível fazer login - $errorMessage";

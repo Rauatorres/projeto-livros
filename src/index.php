@@ -15,7 +15,7 @@
     <div id="login-box">
         <h2>Login</h2>
         <hr>
-        <form action="login.php" method="post">
+        <form action="main.php" method="POST">
             <label for="username">Nome</label>
             <input type="text" id="username" name="username">
             <label for="password">Senha</label>
