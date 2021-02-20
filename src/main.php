@@ -1,8 +1,14 @@
 <?php
+session_start();
 // Recebendo o nome de usuário e a senha através do método post
-$username = $_POST['username'];
-$password = $_POST['password'];
-
+if (isset($_POST['username']) && isset($_POST['password'])){
+    $usernamePost = $_POST['username'];
+    $passwordPost = $_POST['password'];
+    $_SESSION['username'] = $usernamePost;
+    $_SESSION['password'] = $passwordPost;
+}
+$username = $_SESSION['username'];
+$password = $_SESSION['password'];
 // Conexão com banco de dados
 try{
     // Conexão com o banco específico do usuário
@@ -88,7 +94,7 @@ try{
     <header>
         <a href="main.php" id="home-title" class="header-tabs">Projeto Livros</a>
         <div id="header-config-tabs">
-            <a href="#" class="header-tabs">Configurar Biblioteca</a>
+            <a href="main.php" class="header-tabs">Configurar Biblioteca</a>
             <a href="#" class="header-tabs">Configurações de Conta</a>
         </div>
     </header>
@@ -153,11 +159,24 @@ try{
         </ul>
     </nav>
     <section>
-        <div id="add-buttons-box">
-            <a href="" class="add-buttons" id="add-livro"><i class="fas fa-plus"></i><span>Adicionar Livro</span> </a>
-            <a href="" class="add-buttons" id="add-categoria"><i class="fas fa-plus"></i><span>Adicionar Categoria</span> </a>
-            <!-- <a href="" class="add-buttons" id="add-autor"><i class="fas fa-plus"></i><span>Adicionar Autor</span></a> -->
-        </div>
+        <?php
+            $gettingUserId = $loginDB->prepare("SELECT ID FROM USUARIO WHERE USERNAME = :username");
+            $gettingUserId->bindValue(":username", $username);
+            $gettingUserId->execute();
+            $userIdList = $gettingUserId->fetch(PDO::FETCH_ASSOC);
+            $userId = $userIdList['ID'];
+
+            if (isset($_GET['action'])){
+
+            }else{
+                echo '
+                <div id="add-buttons-box">
+                    <a href="main.php?&action=addlivro" class="add-buttons" id="add-livro"><i class="fas fa-plus"></i><span>Adicionar Livro</span> </a>
+                    <a href="" class="add-buttons" id="add-categoria"><i class="fas fa-plus"></i><span>Adicionar Categoria</span> </a>
+                </div>
+                ';
+            }
+        ?>
     </section>
 </body>
 </html>
